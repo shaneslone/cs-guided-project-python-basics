@@ -13,5 +13,11 @@ Notes:
 - All of the letters in the input list will always be lowercase.
 """
 def mapping(letters):
-    # Your code here
+    d = {}
+    for letter in letters:
+        upper_letter = letter.upper()
+        d[letter] = upper_letter
+    return d    
+
+print(mapping(["p", "s"]))
 
