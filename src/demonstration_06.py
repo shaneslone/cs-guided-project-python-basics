@@ -17,4 +17,17 @@ Examples:
 """
 def XO(txt):
     # Your code here
+    x = 0
+    o = 0
+    for letter in txt:
+        if letter == 'x':
+            x = x+1
+        elif letter =='o':
+            o = o+1
+    if o == x:
+        return True
+    else:
+        return False                
 
+print(XO("ooxx"))
+print(XO("ooxxo"))
